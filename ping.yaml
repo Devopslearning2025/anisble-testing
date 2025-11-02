@@ -1,6 +1,6 @@
 - name: checking the server status
   hosts: web
-  becomes: yes 
+  become: yes 
   tasks:
     - name: ping the server 
       anible.builtin.ping:
