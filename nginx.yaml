@@ -5,13 +5,14 @@
   - name: nginx install
     ansible.builtin.yum:
       name: nginx
-      state: installed
+      state: latest
 
 - name: nginx-start
   hosts: web
   become: yes
   tasks:
   - name: nginx start
-    ansible.builtin.yum:
+    ansible.builtin.service:
       name: nginx
       state: started
+      enabled: yes
