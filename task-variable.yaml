@@ -1,0 +1,13 @@
+- name: varisbles 
+  hosts: web
+  vars:
+    Name: "terraform"
+    Course: "Devops"
+    Duration: "3 months"
+  tasks:
+  - name: print information 
+    vars:
+      course: "jenkins"
+      Duration: "6 months"
+    ansible.builtin.debug:
+      msg: "Hi I am {{Name}} and learning {{Course}} course with duration is {{Duration}}"
