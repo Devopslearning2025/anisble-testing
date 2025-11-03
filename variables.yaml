@@ -1,7 +1,7 @@
 - name: varisbles 
   hosts: web
   vars:
-    Name: "Ramesh"
+    Name: "terraform"
     Course: "Devops"
     Duration: "3 months"
   tasks:
