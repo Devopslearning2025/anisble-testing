@@ -5,9 +5,13 @@
     Course: "Devops"
     Duration: "3 months"
   tasks:
-  - name: print information 
+  - name: print override information 
     vars:  # Task variables
       Course: "jenkins"
       Duration: "6 months"
+    ansible.builtin.debug:
+      msg: "Hi I am {{Name}} and learning {{Course}} course with duration is {{Duration}}"
+    
+  - name: print information 
     ansible.builtin.debug:
       msg: "Hi I am {{Name}} and learning {{Course}} course with duration is {{Duration}}"
