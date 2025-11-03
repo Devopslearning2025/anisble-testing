@@ -1,0 +1,13 @@
+- name: Enter username and iam_password
+  hosts: localhost
+  vars_prompt:
+    - name: USERNAME
+      prompt: enter username 
+      privte: false 
+    - name: PASSWORD 
+      prompt: please enter your password 
+      private: true 
+  tasks:
+  - name: print the information 
+    ansible.builtin.debug:
+      msg: "Hi, username is {{USERNAME}} and password is {{PASSWORD}}"
