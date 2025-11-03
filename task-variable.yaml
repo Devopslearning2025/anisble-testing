@@ -6,7 +6,7 @@
     Duration: "3 months"
   tasks:
   - name: print information 
-    vars:
+    vars:  # Task variables
       Course: "jenkins"
       Duration: "6 months"
     ansible.builtin.debug:
