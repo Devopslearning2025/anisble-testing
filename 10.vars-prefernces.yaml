@@ -2,8 +2,8 @@
   hosts: localhost
   vars:
     WISHES: "Morning from PLAY variable"
-  vars_files:
-  - vars.yaml
+  # vars_files:
+  # - vars.yaml
   vars_prompt:
     - name: WISHES
       prompt:  please enter WISHES
@@ -16,5 +16,6 @@
       msg: "Hello, Good {{WISHES}}"
 
 
-#Coomand prompt
-#Task level
+# 1. Coomand prompt
+# 2. ask level
+# 3. File level
