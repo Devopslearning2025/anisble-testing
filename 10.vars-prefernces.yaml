@@ -4,10 +4,10 @@
     WISHES: "Morning from PLAY variable"
   # vars_files:
   # - vars.yaml
-  vars_prompt:
-    - name: WISHES
-      prompt:  please enter WISHES
-      private: false
+  # vars_prompt:
+  #   - name: WISHES
+  #     prompt:  please enter WISHES
+  #     private: false
   tasks:
   - name: check preferences
     # vars:
@@ -19,3 +19,4 @@
 # 1. Coomand prompt
 # 2. ask level
 # 3. File level
+# 4. Prompt 
