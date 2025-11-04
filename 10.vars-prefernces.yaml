@@ -16,9 +16,10 @@
       msg: "Hello, Good {{WISHES}}"
 
 
-# 1. Coomand prompt
-# 2. ask level
+# 1. Command prompt
+# 2. Task level
 # 3. File level
 # 4. Prompt level 
 # 5. Play level 
 # 6. inventory 
+# 7. Role level
