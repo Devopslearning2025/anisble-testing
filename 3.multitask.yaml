@@ -20,4 +20,4 @@
     register: folder
   - name: PLAY-3 from Task-3
     ansible.builtin.debug:
-      msg: {{folder}}
+      msg: " {{folder}}"
