@@ -9,5 +9,8 @@
       private: true 
   tasks:
   - name: print the information 
+    vars_prompt:
+      - name: USERNAME
+        prompt: please enter your name from task
     ansible.builtin.debug:
       msg: "Hi, username: {{USERNAME}} and password: {{PASSWORD}}"
