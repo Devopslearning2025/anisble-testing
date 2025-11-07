@@ -16,7 +16,7 @@
   hosts: localhost
   tasks:
   - name: PLAY-3 from Task-1
-    ansible.builtin.shell: ls -l /home/ec2-user/anisble-testing
+    ansible.builtin.shell: ls -l /home/ec2-user/anisble-testing | tail -n 1
     register: folder
   - name: PLAY-3 from Task-2
     ansible.builtin.debug:
