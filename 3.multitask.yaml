@@ -15,9 +15,9 @@
 - name: PLAY-3
   hosts: localhost
   tasks:
-  - name: PLAY-3 from Task-3
-    ansible.builtin.command: ls -ld /home/ec2-user
+  - name: PLAY-3 from Task-1
+    ansible.builtin.command: ls -l /home/ec2-user
     register: folder
-  - name: PLAY-3 from Task-3
+  - name: PLAY-3 from Task-2
     ansible.builtin.debug:
       msg: " {{folder}}"
