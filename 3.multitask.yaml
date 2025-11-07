@@ -11,3 +11,13 @@
   - name: PLAY-2 from TASK-2
     ansible.builtin.debug:
       msg: "I am from PLAY-2 from TASK-2"
+
+- name: PLAY-3
+  hosts: localhost
+  tasks:
+  - name: PLAY-3 from Task-3
+    ansible.builtin.command: ls -ld /home/ec2-user
+    register: folder
+  - name: PLAY-3 from Task-3
+    ansible.builtin.debug:
+    msg: {{folder}}
