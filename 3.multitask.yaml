@@ -20,5 +20,5 @@
     register: folder
   - name: PLAY-3 from Task-2
     ansible.builtin.debug:
-      msg: "{{folder}}"
+      msg: "{{folder}}.stdout"
       # var: folder.stdout"
