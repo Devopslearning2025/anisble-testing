@@ -1,5 +1,5 @@
 - name: varisbles 
-  hosts: web
+  hosts: localhost
   vars:
     Name: "terraform"
     Course: "Devops"
