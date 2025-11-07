@@ -4,7 +4,13 @@
     Name: "terraform"
     Course: "Devops"
     Duration: "3 months"
+    automation: "Ansible"
+    script: "shell"
+    pipeline: "jenkins"
   tasks:
   - name: print information 
     ansible.builtin.debug:
       msg: "Hi I am {{Name}} and learning {{Course}} course with duration is {{Duration}}"
+  - name: print course details 
+    ansible.builtin.debug:
+      msg: "The tools involved {{automation}} {{script}} {{pipeline}}"
