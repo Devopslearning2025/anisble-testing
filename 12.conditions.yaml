@@ -7,32 +7,18 @@
       ansible.builtin.command: id expense 
       register: USER 
       ignore_errors: yes
+
     - name: user info
       ansible.builtin.debug:
         msg: "user info is {{USER}}"
 
-    - name: create user
-      ansible.builtin.command: useradd expense
-      when: USER.rc !=0 #condition
+    # - name: create user
+    #   ansible.builtin.command: useradd expense
+    #   when: USER.rc !=0 #condition
 
 # ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 12.conditions.yaml 
 
-# - name: conditions 
-#   hosts: localhost
-#   become: yes
-#   tasks:
-#   - name: check user exist 
-#     ansible.builtin.command: id expense 
-#     register: USER 
-#     ignore_errors: true 
-#   - name: user info 
-#     ansible.builtin.debug:
-#       msg: "user infor is {{USER}}"
-  
-#   - name: create user 
-#     ansible.builtin.command: useradd expense 
-#     when: USER.rc != 0 #condition
-  
-#   - name: say hello 
-#     ansible.builtin.debug:
-#       msg: "Hello"
+
+    - name: say hello 
+      ansible.builtin.debug:
+        msg: "Hello"
