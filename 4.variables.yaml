@@ -3,7 +3,7 @@
   hosts: web 
   vars:
     Name: "Ramesh"
-    Course: "Devops"
+    Course: "Terraform"
     Duration: "45days"
   become: yes
   tasks:
