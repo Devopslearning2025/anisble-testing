@@ -1,6 +1,15 @@
+---
 - name: variables from inventory
   hosts: localhost
   tasks:
-  - name: print override information 
-    ansible.builtin.debug:
-      msg: "Hi I am {{Name}} and learning {{Course}} course with duration is {{Duration}}"
+    - name: print inventory variables
+      ansible.builtin.debug:
+        msg: "Hi, i am {{Name}} and Learning AWS with {{Course}} for next {{Duration}}"
+
+
+# - name: variables from inventory
+#   hosts: localhost
+#   tasks:
+#   - name: print override information 
+#     ansible.builtin.debug:
+#       msg: "Hi I am {{Name}} and learning {{Course}} course with duration is {{Duration}}"
