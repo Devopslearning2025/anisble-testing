@@ -11,8 +11,8 @@
       private: false
   tasks:
     - name: check preferences
-      vars:
-        NAME: "Ramesh from Task"
+      # vars:
+      #   NAME: "Ramesh from Task"
       ansible.builtin.debug:
         msg: "Hello, My Name is: {{NAME}}"
 
