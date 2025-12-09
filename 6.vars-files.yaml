@@ -1,5 +1,6 @@
 ---
 - name: Variables from vars file
+  hosts: loca;host
   vars_files:
     - vars.yaml
   tasks:
