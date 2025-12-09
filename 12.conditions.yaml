@@ -12,7 +12,7 @@
         msg: "user info is {{USER}}"
 
     - name: create user
-      ansible.builtin.debug: useradd expense
+      ansible.builtin.command: useradd expense
       when: USER.rc !=0 #condition
 
 # ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 12.conditions.yaml 
