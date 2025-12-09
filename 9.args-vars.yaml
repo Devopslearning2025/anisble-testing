@@ -1,6 +1,15 @@
-- name: varisbles from argument 
+---
+- name: Variables from Arguments 
   hosts: localhost
-  tasks:
-  - name: get vars from args
-    ansible.builtin.debug:
-      msg:  "Hello {{PERSON}}, Good {{WISHES}}"
+  tasks: 
+    - name: Get variable from Arguments 
+      ansible.builtin.debug:
+        msg: "Hello {{PERSON}}, Good {{WISHES}}"
+
+
+# - name: varisbles from argument 
+#   hosts: localhost
+#   tasks:
+#   - name: get vars from args
+#     ansible.builtin.debug:
+#       msg:  "Hello {{PERSON}}, Good {{WISHES}}"
