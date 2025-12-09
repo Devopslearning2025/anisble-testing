@@ -1,8 +1,20 @@
-- name: variables from files 
-  hosts: web
+---
+- name: Variables from vars file
   vars_files:
-  - vars.yaml
+    - vars.yaml
   tasks:
-  - name: print override information 
-    ansible.builtin.debug:
-      msg: "Hi I am {{Name}} and learning {{Course}} course with duration is {{Duration}}"
+    - name: print infor vars files
+      ansible.builtin.debug:
+        msg: "Hi, I am {{Name}} and Learning {{Course}} with AWS for next {{Duration"
+
+
+
+
+# - name: variables from files 
+#   hosts: web
+#   vars_files:
+#   - vars.yaml
+#   tasks:
+#   - name: print override information 
+#     ansible.builtin.debug:
+#       msg: "Hi I am {{Name}} and learning {{Course}} course with duration is {{Duration}}"

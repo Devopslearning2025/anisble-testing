@@ -21,18 +21,6 @@
       ansible.builtin.debug:
         # msg: "Hi, I am Ramesh and learning Devops with AWS for next 45days"
         msg: "Hi Iam {{Name}} and Learning {{Course}} with AWS for next {{Duration}}"
-    
-
-
-
-
-
-
-
-
-
-
-
 
 
 
