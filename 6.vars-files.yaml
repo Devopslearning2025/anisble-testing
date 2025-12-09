@@ -6,7 +6,7 @@
   tasks:
     - name: print infor vars files
       ansible.builtin.debug:
-        msg: "Hi, I am {{Name}} and Learning {{Course}} with AWS for next {{Duration}}""
+        msg: "Hi, I am {{Name}} and Learning {{Course}} with AWS for next {{Duration}}"
 
 
 
