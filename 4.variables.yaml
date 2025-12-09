@@ -8,11 +8,21 @@
   become: yes
   tasks:
     - name: Print info 
+      ansible.builtin.debug:
+        msg: "Hi, I am Ramesh and learning Devops with AWS for next 3months"
+
+    - name: print info from PLAYT level Variables
+      ansible.builtin.debug:
+        msg: "Hi Iam {{Name}} and Learning {{Course}} with AWS for next {{Duration}}"
+      
+    - name: Print info from Task level varisbles
       vars: 
           Course: "Jenkins"
       ansible.builtin.debug:
         # msg: "Hi, I am Ramesh and learning Devops with AWS for next 45days"
         msg: "Hi Iam {{Name}} and Learning {{Course}} with AWS for next {{Duration}}"
+    
+
 
 
 
