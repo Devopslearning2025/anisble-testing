@@ -1,13 +1,30 @@
-- name: Enter username and iam_password
+---
+- name: ENter Username and password
   hosts: localhost
   vars_prompt:
-    - name: USERNAME
+    - name: "USERNAME"
       prompt: please enter your username
-      private: false 
-    - name: PASSWORD 
-      prompt: please enter your password 
-      private: true 
-  tasks:
-  - name: print the information
-    ansible.builtin.debug:
-      msg: "Hi, username: {{USERNAME}} and password: {{PASSWORD}}"
+      private: false
+    - name: "PASSWORD"
+      prompt: "Enter your passord"
+      private: true
+
+  taks:
+    - name: Print info 
+      ansible.builtin.debug:
+        msg: "My username is: {{USERNAME}} and my password is: {{PASSWORD}}"
+
+
+#  name: Enter username and iam_password
+#   hosts: localhost
+#   vars_prompt:
+#     - name: USERNAME
+#       prompt: please enter your username
+#       private: false 
+#     - name: PASSWORD 
+#       prompt: please enter your password 
+#       private: true 
+#   tasks:
+#   - name: print the information
+#     ansible.builtin.debug:
+#       msg: "Hi, username: {{USERNAME}} and password: {{PASSWORD}}"
