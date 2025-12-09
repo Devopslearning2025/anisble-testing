@@ -11,12 +11,15 @@
       private: false
   tasks:
     - name: check preferences
+      vars:
+        NAME: "Ramesh from Task"
       ansible.builtin.debug:
         msg: "Hello, My Name is: {{NAME}}"
 
 
+# ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 10.vars-prefernces.yaml -e NAME="Ramesh from prompt"
 
-# 1. Command prompt
+# 1. Command line Argument
 # 2. Task level
 # 3. File level
 # 4. Prompt level 
