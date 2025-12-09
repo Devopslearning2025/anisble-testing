@@ -1,10 +1,11 @@
+---
 - name: checking the server status
   hosts: web
   become: yes 
   tasks:
   - name: ping the server 
     ansible.builtin.ping:
----
+
 - name: ping the server
   hosts: web 
   tasks:  #list of tasks/modules/collections
