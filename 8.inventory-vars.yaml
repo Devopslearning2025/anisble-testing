@@ -3,6 +3,8 @@
   hosts: localhost
   tasks:
     - name: print inventory variables
+      vars:
+        Timings: "9:30AM - 5:30 PM IST"
       ansible.builtin.debug:
         msg: "Hi, I am {{Name}} and Learning AWS with {{Course}} for next {{Duration}} at {{Timings}}"
 
