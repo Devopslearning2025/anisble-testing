@@ -4,7 +4,7 @@
   tasks:
     - name: print inventory variables
       ansible.builtin.debug:
-        msg: "Hi, I am {{Name}} and Learning AWS with {{Course}} for next {{Duration}}"
+        msg: "Hi, I am {{Name}} and Learning AWS with {{Course}} for next {{Duration}} at {{Timings}}"
 
 
 # - name: variables from inventory
