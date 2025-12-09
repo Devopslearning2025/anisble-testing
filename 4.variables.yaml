@@ -4,7 +4,7 @@
   vars:
     Name: "Ramesh"
     Course: "Terraform"
-    Duration: "45days"
+    Duration: "3 months"
   become: yes
   tasks:
     - name: Print info 
