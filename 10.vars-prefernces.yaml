@@ -5,10 +5,10 @@
     NAME: "Ramesh from PLAY Variable"
   # vars_files:
   #   - vars.yaml
-  vars_prompt:
-    - name: NAME
-      prompt: Please Enter your name
-      private: false
+  # vars_prompt:
+  #   - name: NAME
+  #     prompt: Please Enter your name
+  #     private: false
   tasks:
     - name: check preferences
       # vars:
