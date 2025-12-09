@@ -1,8 +1,8 @@
 ---
 - name: Variables preferences
   hosts: localhost
-  vars:
-    NAME: "Ramesh from PLAY Variable"
+  # vars:
+  #   NAME: "Ramesh from PLAY Variable"
   # vars_files:
   #   - vars.yaml
   # vars_prompt:
