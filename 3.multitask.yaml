@@ -1,24 +1,42 @@
-- name: PLAY -1
-  hosts: localhost
+---
+- name: PLAY-1
+  hosts: web 
+  become: yes 
   tasks:
-  - name: PLAY-1 and TASK-1
-    ansible.builtin.debug:
-      msg: "I am from PLAY-1 from TASK-1"
+    - name: PLAY-1 and Task-1
+      ansible.builtin.debug:
+        msg: "I am TASK-1 from PLAY-1"
+    - name: PLAY-1 and Task-2
+      ansible.builtin.debug:
+        msg: "I am Task-2 from PLAY-1"
 
-- name: PLAY-2
-  hosts: localhost
-  tasks:
-  - name: PLAY-2 from TASK-2
-    ansible.builtin.debug:
-      msg: "I am from PLAY-2 from TASK-2"
 
-- name: PLAY-3
-  hosts: localhost
-  tasks:
-  - name: PLAY-3 from Task-1
-    ansible.builtin.shell: ls -l /home/ec2-user/anisble-testing | tail -n 1
-    register: folder
-  - name: PLAY-3 from Task-2
-    ansible.builtin.debug:
-      msg: "{{folder}}.stdout"
-      # var: folder.stdout"
+
+
+
+
+
+# - name: PLAY -1
+#   hosts: localhost
+#   tasks:
+#   - name: PLAY-1 and TASK-1
+#     ansible.builtin.debug:
+#       msg: "I am from PLAY-1 from TASK-1"
+
+# - name: PLAY-2
+#   hosts: localhost
+#   tasks:
+#   - name: PLAY-2 from TASK-2
+#     ansible.builtin.debug:
+#       msg: "I am from PLAY-2 from TASK-2"
+
+# - name: PLAY-3
+#   hosts: localhost
+#   tasks:
+#   - name: PLAY-3 from Task-1
+#     ansible.builtin.shell: ls -l /home/ec2-user/anisble-testing | tail -n 1
+#     register: folder
+#   - name: PLAY-3 from Task-2
+#     ansible.builtin.debug:
+#       msg: "{{folder}}.stdout"
+#       # var: folder.stdout"
