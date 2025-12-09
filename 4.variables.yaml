@@ -9,8 +9,10 @@
   tasks:
     - name: Print info 
       ansible.builtin.debug:
-        # msg: "Hi, I am Ramesh and learning Devops with AWS for 45days duration"
-        msg: "Hi Iam {{Name}} and Learning {{Course}} with AWS for {{Duration}} duration"
+        vars: 
+          Course: "Jenkins"
+        # msg: "Hi, I am Ramesh and learning Devops with AWS for next 45days"
+        msg: "Hi Iam {{Name}} and Learning {{Course}} with AWS for next {{Duration}}"
 
 
 
