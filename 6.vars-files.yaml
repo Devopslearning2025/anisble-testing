@@ -9,7 +9,7 @@
         msg: "Hi, I am {{Name}} and Learning {{Course}} with AWS for next {{Duration}}"
 
 
-
+# ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 6.vars-files.yaml
 
 # - name: variables from files 
 #   hosts: web

@@ -9,6 +9,8 @@
         msg: "Hi, I am {{Name}} and Learning AWS with {{Course}} for next {{Duration}} and timings are {{Timings}}"
 
 
+#  ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 8.inventory-vars.yaml
+
 # - name: variables from inventory
 #   hosts: localhost
 #   tasks:

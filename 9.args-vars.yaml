@@ -7,6 +7,9 @@
         msg: "Hello {{PERSON}}, Good {{WISHES}}"
 
 
+# ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 -e "PERSON=Ramesh WISHES=Morning" 9.args-vars.yaml
+# ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 -e "PERSON=Ramesh" -e"WISHES=Morning" 9.args-vars.yaml
+
 # - name: varisbles from argument 
 #   hosts: localhost
 #   tasks:
