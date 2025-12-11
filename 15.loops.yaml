@@ -1,0 +1,12 @@
+---
+- name: checking loop  
+  hosts: localhost
+  tasks: 
+    - name: print names 
+      ansible.builtin.debug:
+        msg: "Helo, {{item}}"
+      loop:
+        - Linux
+        - Ansible
+        - Shell 
+        - jenkins

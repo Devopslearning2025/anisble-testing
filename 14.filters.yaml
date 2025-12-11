@@ -49,10 +49,10 @@
   tasks:
     - name: before convert
       ansible.builtin.debug:
-        msg: "Before convert {{my_dict}}"
+        msg: "Before convert: {{my_dict}}"
     - name: after convert 
       ansible.builtin.debug:
-        msg: "After convet {{my_dict | dict2items}}"
+        msg: "After convet: {{my_dict | dict2items}}"
 
 - name: convert item to dict 
   hosts: localhost
@@ -64,7 +64,7 @@
   tasks:
     - name: before convert
       ansible.builtin.debug:
-        msg: "before convert {{my_list}}"
+        msg: "before convert: {{my_list}}"
     - name: after convert
       ansible.builtin.debug:
-        msg: "after convert {{my_list | items2dict }}"
+        msg: "after convert: {{my_list | items2dict }}"
