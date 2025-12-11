@@ -1,0 +1,12 @@
+- name: install list of packes
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: install packges 
+      ansible.builtin.dnf: 
+        name: "{{item.name}}"
+        state: "{{item.state}}" 
+      loop:
+        - { name: 'git', state: 'latest'}
+        - { name: 'gzip', state: 'absent'}
+        - { name: 'nginx', state: 'latest'}
