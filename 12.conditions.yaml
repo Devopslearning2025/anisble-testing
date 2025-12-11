@@ -15,10 +15,6 @@
     - name: create user
       ansible.builtin.command: useradd expense
       when: USER.rc !=0 #condition
-    
-    - name: info
-      ansible.builtin.debug:
-        msg: USER.stdout_lines
 
 # ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 12.conditions.yaml 
 
