@@ -34,7 +34,22 @@
   tasks:
     - name: min value 
       ansible.builtin.debug:
-        msg: "{{ages | min}}"
+        msg: "min value is: {{ages| min}}"
     - name: max value
       ansible.builtin.debug:
-        msg: "{{ages | max }}"
+        msg: "max value is: {{ages | max }}"
+
+- name: convert dict into list 
+  hosts: localhost
+  vars: 
+    my_dict:
+      course: "Ansible"
+      duration: 45days
+      cloud: "aws"
+  tasks:
+    - name: before convert
+      ansible.builtin.debug:
+        msg: "Before convert {{my_dict}}"
+    - name: after convert 
+      ansible.builtin.debug:
+        msg: "After convet {{my_dict | dict2items}}"
