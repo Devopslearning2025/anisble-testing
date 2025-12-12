@@ -5,5 +5,6 @@
   tasks:
   - name: command module 
     ansible.builtin.command: " echo, 'Hi this is command line module' > /tmp/command.txt"
+    ignore_errors: yes
   - name: shell module
     ansible.builtin.shell: " echo, 'Hi this is shell module' > /tmp/shell.txt"
