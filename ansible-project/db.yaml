@@ -1,6 +1,6 @@
 ---
 - name: install mysql server and configure 
-  hosts: db
+  hosts: frontend
   become: yes 
   tasks:
     - name: install mysql 
