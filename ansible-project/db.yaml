@@ -5,9 +5,9 @@
   vars:
     login_password: db.devopslearning2026.store
   vars_prompt:
-    - name: "mysql_root_password"
-      prompt: "enter db password"
-      private: true 
+  - name: "mysql_root_password"
+    prompt: "enter db password"
+    private: true 
   tasks:
     - name: install mysql 
       ansible.builtin.dnf:
@@ -20,7 +20,7 @@
         state: started
         enabled: yes
 
-      # check password is already setup or not
+    # check password is already setup or not
     - name: check DB connection
       community.mysql.mysql_info:
         login_user: root
