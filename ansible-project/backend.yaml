@@ -17,6 +17,6 @@
   - name: create expense user 
     ansible.builtin.user:
       name: expense 
-      
+
   - name: create folder 
     ansible.builtin.command: mkdir /app
