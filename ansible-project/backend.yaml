@@ -1,6 +1,6 @@
 ---
 - name: configure ba kend server
-  hosts: backend 
+  hosts: backend
   become: yes 
   tasks:
   - name: disable node js 
